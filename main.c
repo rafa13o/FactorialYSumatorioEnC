@@ -1,29 +1,10 @@
 #include <stdio.h>
-#include <string.h>
 
+long factorial(int);
+int sumatorio (int);
 
-long factorial(int x){
-    long f = 1;
-
-    for(int i=1; i<=x;i++){
-        f = f*i;
-    }
-
-    return f;
-}
-
-int sumatorio (int x){
-    int s=0;
-
-    for(int i =1;i<=x;i++){
-        s=s+i;
-    }
-    
-    return s;
-}
 
 int main(void) {
-
     // Declaración de las variables que voy a utilizar a lo largo del programa
     int numero; // Número que recojo por teclado del usuario
     int posicionPares = 0, posicionImpares = 0; // Me servirán como índice para saber en qué posición del vector (array) tengo que poner el resultado
@@ -73,4 +54,28 @@ int main(void) {
     }
 
   return 0;
+}
+
+
+
+long factorial(int x){
+    long f = 1;
+
+    for(int i=1; i<=x;i++){
+        f = f*i;
+    }
+
+    return f;
+}
+
+
+
+int sumatorio (int x){
+    int s=0;
+
+    for(int i =1;i<=x;i++){
+        s=s+i;
+    }
+    
+    return s;
 }
